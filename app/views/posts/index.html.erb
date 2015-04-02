@@ -1,0 +1,12 @@
+<div class="jumbotron"><h1>Dev Blogger </h1></div>
+
+<% if @posts.any? %>
+<% @posts.each do |post| %>
+<div class="well">
+	<%= link_to post.title, post %>
+    <p>Published <%= time_ago_in_words(post.created_at) %> ago</p>
+</div>
+<% end %>
+<% else %>
+<p> There are no posts yet. <%= link_to "Add a new post", new_post_path, remote: true %> </p>
+<% end %>

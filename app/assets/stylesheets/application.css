@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+
+body {
+	background-color: black;
+}
+
+.jumbotron {
+ 	background-color: orange;
+ }
+.well {
+	background-color: beige;
+}
