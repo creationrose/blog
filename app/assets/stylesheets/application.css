@@ -16,12 +16,12 @@
 
 
 body {
-	background-color: black;
+	background-color: beige;
 }
 
 .jumbotron {
  	background-color: orange;
  }
 .well {
-	background-color: beige;
+	background-color: lightblue;
 }
