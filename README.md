@@ -1,6 +1,6 @@
-#Blogger 
+#Blogger
 
-This blog is useful for adding topics of interests. You can also add comments to posts. 
+This blog is useful for adding topics of interests. You can also add comments to posts.
 
 ##Author
 
@@ -61,3 +61,18 @@ GNU GPL v.2.0
 Report bugs via fork and pull requests.
 
 If you would like to improve and add more features and functionality feel free.
+
+
+## User Stories
+
+As a user, I want to be able to post my deepest thoughts in a blog entry with a title and date.
+
+As a user, I want to be able to see all of my posts listed by title and have them link to each post, so I can revisit any entry later.
+
+As a user, I want to be able to update or delete any of my posts, so that I can revise my thoughts later.
+
+As a user, I would like to be able to comment on a blog post, so that I can share my thoughts as well.
+
+As a user, I would like these comments to only be displayed at the bottom of the post they belong to and not on any separate pages.
+
+As a user, I would like to be able to edit or delete my comments, in case I made a mistake when writing them.
