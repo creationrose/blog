@@ -1,4 +1,6 @@
+<div class="container">
 <%= form_for([@post, @post.comments.build]) do |f| %>
 	<%= f.text_field :comment %>
 	<%= f.submit %>
 <% end %>    
+</div>
