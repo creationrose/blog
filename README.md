@@ -1,6 +1,8 @@
 #Blogger
 
-This blog is useful for adding topics of interests. You can also add comments to posts.
+This blog is useful for adding topics of interests. 
+This is step 2 and uses a different database in order to be able to fix mistakes on either assessment separately. 
+
 
 ##Author
 
@@ -52,9 +54,9 @@ If you would like to improve and add more features and functionality feel free.
 
 ## User Stories
 
-As a user, I want to be able to login in order to make new posts.
+As a user, I want to be able to log onto the site in order to make new posts.
 
-As a user, I want to be able to login in order to make new comments.
+As a user, I want to be able to login onto the order to make new comments.
 
 
 ##Heroku
