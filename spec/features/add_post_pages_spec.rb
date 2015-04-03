@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 describe "the add a post process" do
   it "adds a new post" do
     visit posts_path

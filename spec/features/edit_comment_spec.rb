@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 describe "editing a comment process" do
   it "edits the comment" do
     post = Post.create(title: "Hello", body: "Content")
