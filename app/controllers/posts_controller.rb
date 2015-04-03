@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
 	before_action :find_post, only: [:show, :edit, :update, :destroy]
-	before_filter :authenticate_user!, except: [:index, :show]
+	before_filter :authenticate_user!
 
 	def index
 	    @posts = Post.all
@@ -40,9 +40,17 @@ class PostsController < ApplicationController
 	def destroy
 		@post.destroy
 		redirect_to root_path
+  	rescue
+			rescue_from ActiveRecord::RecordNotFound, :with => :not_allowed
+    flash[:notice] = 'You are not allowed to delete this question'
+		redirect_to root_path
 	end
 
 	private
+
+	def not_allowed
+    render :text => "Sorry you can't do that", :status => 404
+  end
 
 	def find_post
 		@post = Post.find(params[:id])
