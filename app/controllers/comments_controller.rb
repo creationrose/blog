@@ -7,7 +7,7 @@ class CommentsController < ApplicationController
 		if @comment.save
 			redirect_to post_path(@post)
 		else
-			render 'new'
+			render :js => "Sorry, no blank comments please"
 		end
 	end
 
