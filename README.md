@@ -52,11 +52,11 @@ If you would like to improve and add more features and functionality feel free.
 
 ## User Stories
 
-As a user, I want to be able to log in in order to make new posts.
+As a user, I want to be able to login in order to make new posts.
 
-As a user, I want to be able to log in in order to make new comments.
+As a user, I want to be able to login in order to make new comments.
 
 
 ##Heroku
 
-Live at :
+Live at : https://rubyforum.herokuapp.com/
