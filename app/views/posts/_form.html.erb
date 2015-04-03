@@ -1,7 +1,9 @@
 <div class="container">
 	<%= form_for @post do |f| %>
-  <p><b>Title: </b></p><%= f.text_field :title %>
-  <p><b>Body: </b></p> <%= f.text_field :body %>
+	<%= f.label :title %>
+  <%= f.text_field :title, class: "form-control"  %>
+	<%= f.label :body %>
+  <%= f.text_area :body, class: "form-control"  %>
   <%= f.submit %>
   <% end %>
 </div>
