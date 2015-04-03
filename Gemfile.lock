@@ -53,7 +53,7 @@ GEM
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
-    byebug (4.0.4)
+    byebug (4.0.5)
       columnize (= 0.9.0)
     capybara (2.4.4)
       mime-types (>= 1.16)
@@ -131,6 +131,11 @@ GEM
       rails-deprecated_sanitizer (>= 1.0.1)
     rails-html-sanitizer (1.0.2)
       loofah (~> 2.0)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.4)
+    rails_stdout_logging (0.0.3)
     railties (4.2.0)
       actionpack (= 4.2.0)
       activesupport (= 4.2.0)
@@ -211,6 +216,7 @@ DEPENDENCIES
   pry
   quiet_assets
   rails (= 4.2.0)
+  rails_12factor
   rspec-rails
   sass-rails (~> 5.0)
   shoulda-matchers

@@ -11,7 +11,7 @@ gem 'pry'
 gem 'bootstrap-sass', :git => 'https://github.com/twbs/bootstrap-sass.git', :branch => 'next'
 gem 'autoprefixer-rails'
 gem 'devise'
-
+gem 'rails_12factor', group: :production
 
 group :development do
   gem 'byebug'
@@ -28,5 +28,3 @@ group :test do
 	gem 'shoulda-matchers'
 	gem 'capybara'
 end
-
-
