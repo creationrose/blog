@@ -19,6 +19,7 @@ class PostsController < ApplicationController
 			flash[:notice] = "Post successfully added!"
 			redirect_to @post
 		else
+			flash[:alert] = "No empty messages, try again."
 			render 'new'
 		end
 	end
