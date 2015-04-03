@@ -11,7 +11,9 @@ gem 'pry'
 gem 'bootstrap-sass', :git => 'https://github.com/twbs/bootstrap-sass.git', :branch => 'next'
 gem 'autoprefixer-rails'
 gem 'devise'
+gem 'factory_girl_rails'
 gem 'rails_12factor', group: :production
+gem "pundit"
 
 group :development do
   gem 'byebug'

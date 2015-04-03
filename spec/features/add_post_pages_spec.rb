@@ -1,6 +1,8 @@
 describe "the add a post process" do
   it "adds a new post" do
     visit posts_path
+    # user = FactoryGirl.create(:user)
+    # post = FactoryGirl.create(:post)
     click_on 'Add a new post'
     fill_in 'Title', :with => 'Hello'
     fill_in 'Body', :with => 'Content'
