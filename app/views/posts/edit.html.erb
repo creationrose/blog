@@ -1,9 +1,8 @@
 <div class="container">
 <h1>Edit Post</h1>
-
-<%= form_for @post do |f| %>
+  <%= form_for @post do |f| %>
     <%= f.text_field :title %>
-	<%= f.text_field :body %>
-	<%= f.submit %>
-<% end %>
+  	<%= f.text_field :body %>
+  	<%= f.submit %>
+  <% end %>
 </div>
