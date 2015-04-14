@@ -15,7 +15,6 @@ gem 'factory_girl_rails'
 gem 'rails_12factor', group: :production
 gem "pundit"
 
-
 group :development do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
@@ -24,12 +23,12 @@ group :development do
 end
 
 group :test, :development do
-	gem 'rspec-rails'
+  gem 'rspec-rails'
 end
 
 group :test do
-	gem 'shoulda-matchers'
-	gem 'capybara'
+  gem 'shoulda-matchers'
+  gem 'capybara'
   gem 'launchy'
   gem 'database_cleaner'
 end

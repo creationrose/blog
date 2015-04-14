@@ -1,7 +1,5 @@
 describe "delete a post process" do
   it "deletes the post" do
-    #post = Post.create(:title => 'Hello', :body => "Content")
-
     user = FactoryGirl.create(:user)
     post = FactoryGirl.create(:post, user: user)
     login_as(user, scope: :user)

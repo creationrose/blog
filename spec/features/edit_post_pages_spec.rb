@@ -1,10 +1,6 @@
 describe "the edit a post process" do
 
   it "edits a post title" do
-# <<<<<<< HEAD
-#     post = Post.create(:title => 'Hello', :body => "Content")
-#     visit edit_post_path(post)
-# =======
     user = FactoryGirl.create(:user)
     post = FactoryGirl.create(:post, user: user)
     login_as(user, scope: :user)
@@ -15,9 +11,6 @@ describe "the edit a post process" do
   end
 
   it "edits a post body" do
-# <<<<<<< HEAD
-#     post = Post.create(:title => 'Hello', :body => "Content")
-# =======
     user = FactoryGirl.create(:user)
     post = FactoryGirl.create(:post, user: user)
     login_as(user, scope: :user)

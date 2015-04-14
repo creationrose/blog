@@ -1,12 +1,3 @@
-
-# HEAD
-#  describe "the add a post process" do
-#   it "adds a new post" do
-#     visit posts_path
-#     click_on 'Add a new post'
-#     fill_in 'Title', :with => 'Hello'
-#     fill_in 'Body', :with => 'Content'
-
 feature 'index page' do
   let(:user) { FactoryGirl.create(:user) }
 
@@ -77,4 +68,3 @@ def create_new_user
   fill_in "Password confirmation", with: "password"
   click_on "Sign up"
 end
-
