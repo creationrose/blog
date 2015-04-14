@@ -1,11 +1,12 @@
-<<<<<<< HEAD
-describe "the add a post process" do
-  it "adds a new post" do
-    visit posts_path
-    click_on 'Add a new post'
-    fill_in 'Title', :with => 'Hello'
-    fill_in 'Body', :with => 'Content'
-=======
+
+# HEAD
+#  describe "the add a post process" do
+#   it "adds a new post" do
+#     visit posts_path
+#     click_on 'Add a new post'
+#     fill_in 'Title', :with => 'Hello'
+#     fill_in 'Body', :with => 'Content'
+
 feature 'index page' do
   let(:user) { FactoryGirl.create(:user) }
 
@@ -56,7 +57,6 @@ describe "the add a post process" do
     click_on 'Add a new post'
     fill_in 'Title', :with => post.title
     fill_in 'Body', :with => post.body
->>>>>>> 251ce9a
     click_on 'Create Post'
     expect(page).to have_content 'Hello'
   end
@@ -67,8 +67,6 @@ describe "the add a post process" do
     expect(page).to have_content 'New Post'
   end
 end
-<<<<<<< HEAD
-=======
 
 
 def create_new_user
@@ -79,4 +77,4 @@ def create_new_user
   fill_in "Password confirmation", with: "password"
   click_on "Sign up"
 end
->>>>>>> 251ce9a
+

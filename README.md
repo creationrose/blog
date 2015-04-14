@@ -1,12 +1,6 @@
 #Blogger
 
-<<<<<<< HEAD
 This blog is useful for adding topics of interests. You can also add comments to posts.
-=======
-This blog is useful for adding topics of interests. 
-This is step 2 and uses a different database in order to be able to fix mistakes on either assessment separately. 
-
->>>>>>> 251ce9a
 
 ##Author
 
@@ -47,7 +41,6 @@ Run Rspec and it should all pass. Then you are ready to run ```rails server```
 ----------------------
 ----------------------
 
-<<<<<<< HEAD
 If you are starting from scratch, we first run: ```rails new folder_name -d postgresql -T ```
 
 -d specifies postgres for the database. You can easily replace that with ```-d mysql ```
@@ -61,8 +54,6 @@ Fix up all files, database.yml, Rakefile,  Gemfile to whatever you want. Then ru
 ```rails generate rspec:install```  (If you are including this testing in your gemfile)
 
 
-=======
->>>>>>> 251ce9a
 ##License
 
 GNU GPL v.2.0
@@ -74,7 +65,6 @@ If you would like to improve and add more features and functionality feel free.
 
 ## User Stories
 
-<<<<<<< HEAD
 As a user, I want to be able to post my deepest thoughts in a blog entry with a title and date.
 
 As a user, I want to be able to see all of my posts listed by title and have them link to each post, so I can revisit any entry later.
@@ -86,7 +76,7 @@ As a user, I would like to be able to comment on a blog post, so that I can shar
 As a user, I would like these comments to only be displayed at the bottom of the post they belong to and not on any separate pages.
 
 As a user, I would like to be able to edit or delete my comments, in case I made a mistake when writing them.
-=======
+
 As a user, I want to be able to log onto the site in order to make new posts.
 
 As a user, I want to be able to login onto the order to make new comments.
@@ -95,4 +85,3 @@ As a user, I want to be able to login onto the order to make new comments.
 ##Heroku
 
 Live at : https://rubyforum.herokuapp.com/
->>>>>>> 251ce9a

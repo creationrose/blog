@@ -1,6 +1,4 @@
 describe "deleting a comment process" do
-<<<<<<< HEAD
-=======
 	before do
     visit '/'
     click_link 'Sign Up'
@@ -9,8 +7,6 @@ describe "deleting a comment process" do
     fill_in "Password confirmation", with: "password"
     click_on "Sign up"
     end
-    
->>>>>>> 251ce9a
   it "deletes the comment" do
     post = Post.create(title: "Hello", body: "Content")
     comment = Comment.create(comment: "Hi", post_id: post.id)
