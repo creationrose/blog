@@ -2,9 +2,9 @@ describe "deleting a comment process" do
     before do
     visit '/'
     click_link 'Sign Up'
-    fill_in 'Email', with: "test@test.com"
-    fill_in "Password", with: "password"
-    fill_in "Password confirmation", with: "password"
+    fill_in 'Email', with: user.email
+    fill_in "Password", with: user.password
+    fill_in "Password confirmation", with: user.password
     click_on "Sign up"
     end
 
