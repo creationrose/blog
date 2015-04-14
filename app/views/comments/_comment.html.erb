@@ -1,6 +1,13 @@
 <div class="well">
 	<li><%= comment.comment %></li>
 	<br />
+<<<<<<< HEAD
 	<%= link_to "Edit Comment", edit_post_comment_path(comment.post, comment) %> |
 	<%= link_to "Delete Comment", [comment.post, comment], method: :delete %>
+=======
+	<% if user_signed_in? && current_user == comment.user %>
+		<%= link_to "Edit Comment", edit_post_comment_path(comment.post, comment) %> |
+		<%= link_to "Delete Comment", [comment.post, comment], method: :delete %>
+	<% end %>
+>>>>>>> 251ce9a
 </div>

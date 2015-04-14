@@ -6,15 +6,27 @@ default: &default
 
 development:
   <<: *default
+<<<<<<< HEAD
   database: rails_blog_development
+=======
+  database: dev_blog_development
+>>>>>>> 251ce9a
 
 
 test:
   <<: *default
+<<<<<<< HEAD
   database: rails_blog_test
 
 production:
   <<: *default
   database: rails_blog_production
+=======
+  database: dev_blog_test
+
+production:
+  <<: *default
+  database: dev_blog_production
+>>>>>>> 251ce9a
   username: blog
   password: <%= ENV['BLOG_DATABASE_PASSWORD'] %>

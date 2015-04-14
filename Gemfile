@@ -10,7 +10,14 @@ gem 'turbolinks'
 gem 'pry'
 gem 'bootstrap-sass', :git => 'https://github.com/twbs/bootstrap-sass.git', :branch => 'next'
 gem 'autoprefixer-rails'
+<<<<<<< HEAD
 
+=======
+gem 'devise'
+gem 'factory_girl_rails'
+gem 'rails_12factor', group: :production
+gem "pundit"
+>>>>>>> 251ce9a
 
 group :development do
   gem 'byebug'
@@ -26,6 +33,12 @@ end
 group :test do
 	gem 'shoulda-matchers'
 	gem 'capybara'
+<<<<<<< HEAD
 end
 
 
+=======
+  gem 'launchy'
+  gem 'database_cleaner'
+end
+>>>>>>> 251ce9a

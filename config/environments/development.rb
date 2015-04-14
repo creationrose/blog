@@ -1,4 +1,5 @@
 Rails.application.configure do
+<<<<<<< HEAD
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
@@ -38,4 +39,19 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+=======
+  
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  
+  config.cache_classes = false
+  config.eager_load = false
+  config.consider_all_requests_local       = true
+  config.action_controller.perform_caching = false
+  config.action_mailer.raise_delivery_errors = false
+  config.active_support.deprecation = :log
+  config.active_record.migration_error = :page_load
+  config.assets.debug = true
+  config.assets.digest = true
+  config.assets.raise_runtime_errors = true
+>>>>>>> 251ce9a
 end
