@@ -1,5 +1,10 @@
 class CommentsController < ApplicationController
 	def create
+
+		if !user_signed_in?
+		user_not_authorized
+	  end
+
 		if user_signed_in?
 			@post = Post.find(params[:post_id])
 			@comment = @post.comments.new(comment_params)
