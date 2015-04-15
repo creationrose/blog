@@ -1,4 +1,5 @@
 class CommentsController < ApplicationController
+
 	def create
 
 		if !user_signed_in?
@@ -11,11 +12,16 @@ class CommentsController < ApplicationController
 			@comment.user = current_user
 			@comment.save
 
+	    respond_to do |format|
+
+
 			if @comment.save
-				redirect_to post_path(@post)
+				format.html { redirect_to post_path(@post) }
+				format.js
 			else
 				render :js => "Sorry, no blank comments please"
 			end
+		 end
 		end
 	end
 
