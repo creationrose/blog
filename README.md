@@ -60,12 +60,12 @@ GNU GPL v.2.0
 
 Report bugs via fork and pull requests.
 
-If you would like to improve and add more features and functionality feel free.
+Feel free to improve and add more features based on user stories.
 
 
 ## User Stories
 
-As a user, I want to be able to post my deepest thoughts in a blog entry with a title and date.
+As a user, I want to be able to post a blog entry with a title and date.
 
 As a user, I want to be able to see all of my posts listed by title and have them link to each post, so I can revisit any entry later.
 
@@ -79,7 +79,12 @@ As a user, I would like to be able to edit or delete my comments, in case I made
 
 As a user, I want to be able to log onto the site in order to make new posts.
 
-As a user, I want to be able to login onto the order to make new comments.
+As a user, I want to be able to log onto the site in order to make new comments.
+
+As a user, I want to prevent other users from deleting my posts.
+
+As a user, I want to prevent users who arent logged in from commenting on posts.
+
 
 
 ##Heroku
