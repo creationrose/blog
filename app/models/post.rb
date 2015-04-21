@@ -3,4 +3,9 @@ class Post <ActiveRecord::Base
 	belongs_to :user
 	validates :title, presence: true
 	validates :body, presence: true
+
+  def body_html
+    body.gsub("\n", "<br />\n").html_safe
+  end
+
 end
