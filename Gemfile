@@ -13,7 +13,8 @@ gem 'autoprefixer-rails'
 gem 'devise'
 gem 'factory_girl_rails'
 gem 'rails_12factor', group: :production
-gem "pundit"
+gem 'pundit'
+gem 'newrelic_rpm'
 
 group :development do
   gem 'byebug'

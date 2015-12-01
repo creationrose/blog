@@ -7,5 +7,4 @@ class Post <ActiveRecord::Base
   def body_html
     body.gsub("\n", "<br />\n").html_safe
   end
-
 end
