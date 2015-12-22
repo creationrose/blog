@@ -1,6 +1,8 @@
 class OtherController < ApplicationController
-  def index
-    render 'reminiscence'
+  def reminiscence
   end
-
 end
+
+#add business logic if necessary
+#get data from database
+#@data = ...
