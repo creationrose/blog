@@ -2,8 +2,6 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.0'
 gem 'pg'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
@@ -21,6 +19,8 @@ group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'quiet_assets'
+  gem 'guard'
+  gem 'guard-livereload'
 end
 
 group :test, :development do
@@ -32,4 +32,9 @@ group :test do
   gem 'capybara'
   gem 'launchy'
   gem 'database_cleaner'
+end
+
+group :assets do
+  gem 'sass-rails', '~> 5.0'
+  gem 'uglifier', '>= 1.3.0'
 end

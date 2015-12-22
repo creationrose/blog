@@ -52,5 +52,5 @@ Rails.application.configure do
   config.assets.debug = true
   config.assets.digest = true
   config.assets.raise_runtime_errors = true
-  config.serve_static_assets = true
+  config.serve_static_files = true    #serve_static_assets depreciated
 end
