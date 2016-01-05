@@ -8,8 +8,8 @@ Jessica Hori
 
 ##Updates
 
-Add New Relic performance montoring (database change)
-Add Jainrain social media login
+1. Add New Relic performance montoring (database change)
+2. Add Jainrain social media login
 
 Step for Janrain:
 
@@ -19,11 +19,11 @@ Step for Janrain:
 * If it's verified, sign in the user using devise's `sign_in` method (I think?)
 
 
-
+```ruby
  -------------------------------
          Architecture
  -------------------------------
-```ruby
+
  user
  app endpoint
  janrain
