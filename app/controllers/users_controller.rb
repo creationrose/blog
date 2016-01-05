@@ -9,8 +9,25 @@ class UsersController < ApplicationController
 
   def handle_token
     token = params[:token]
+    response = Unirest.post "https://duchess.rpxnow.com/api/v2/auth_info",
+    parameters:{:apiKey=>"6611c9e927f555a97b3ef35bb6a137a1740d151b",:token=>params[:token]}
 
-    redirect_to :show #error: no show_url  because it hasnt created a new user?  (Doesnt break app if redirecting to "/")
+      provider = response.body['profile']['providerName']
+      uid = response.body['accessCredentials']['uid']
+      user = User.where('provider=?',provider)
+      .where("provider_id=?",uid).first
+
+    if (!user)
+      user = User.new({:email=>"#{uid}@#{provider}",:provider=>provider, :provider_id=> uid })
+    user.save!
+    end
+
+
+    sign_in_and_redirect(:user,user)
+
+
+
+    #redirect_to :show #error: no show_url  because it hasnt created a new user?  (Doesnt break app if redirecting to "/")
   end
 end
 

@@ -256,4 +256,12 @@ Devise.setup do |config|
   # When using omniauth, Devise cannot automatically set Omniauth path,
   # so you need to do it manually. For the users scope, it would be:
   # config.omniauth_path_prefix = '/my_engine/users/auth'
+
+
+  config.capturable_server = "https://duchess.rpxnow.com/"  #"https://myapp.janraincapture.com"
+  config.capturable_client_id = "kpkmfekdmlodcmodcnco"    #"myclientid"
+  config.capturable_client_secret = "6611c9e927f555a97b3ef35bb6a137a1740d151b" #"myclientsecret"
+  config.capturable_redirect_uri = "http://sample.com" # Optional, see below
+  config.capturable_auto_create_account = false # Optional, see below
+  config.capturable_redirect_if_no_user = "/users/sign_up" # Optional, see below
 end

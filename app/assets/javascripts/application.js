@@ -14,4 +14,11 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap
+//= require devise_capturable
+
 //= require_tree .
+
+
+
+
+

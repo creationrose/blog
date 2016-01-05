@@ -15,6 +15,8 @@ gem 'factory_girl_rails'
 gem 'rails_12factor', group: :production
 gem 'pundit'
 gem 'newrelic_rpm'
+gem "devise_capturable"
+gem 'unirest'
 
 group :development do
   gem 'byebug'
