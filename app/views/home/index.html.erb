@@ -19,16 +19,26 @@
 <% if user_signed_in? %>
 <p>Signed in as <%= current_user.email %></p>
 
-		<%= link_to "Edit My Account", edit_user_registration_path  %> |
+		<!--<%= link_to "Edit My Account", edit_user_registration_path  %> | -->
 		<%= link_to "Sign out", destroy_user_session_path, method: :delete %>
 
 <% else %>
 
-    <%= link_to "Sign Up", new_user_registration_path %> |
-    <%= link_to "Sign In", new_user_session_path %>
+		<%= link_to_rpx "Sign in using Jainrain", user_session_url %>
+
+
 <% end %>
 
 
 <br />
 <br />
 <div id="janrainEngageEmbed"></div>
+
+<%= javascript_include_rpx(user_session_url) %>
+
+<%= embed_rpx user_session_url %>
+
+<!-- <%= link_to "Sign Up", new_user_registration_path %> |
+    <%= link_to "Sign In", new_user_session_path %>
+
+    -->

@@ -1,6 +1,13 @@
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
+  config.rpx_application_name = "duchess"
+  RPXNow.api_key = "6611c9e927f555a97b3ef35bb6a137a1740d151b"
+  config.rpx_extended_user_data = true
+  config.rpx_additional_user_data = [:verifiedEmail, :url, :providerName,:photo]
+
+
+
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
