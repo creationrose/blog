@@ -11,9 +11,9 @@ Jessica Hori
 1. Add New Relic performance montoring (database change)
 2. Add Jainrain social media login
 
-Step for Janrain:
+Steps for Janrain:
 
-* create new user based based on FB or Google (how to do with devise handling it?) and save janrain info to it
+* create new user based on FB or Google (how to do with devise handling it?) and save janrain info to it
 * verify the token with Janrain and get more info from them
 * Maybe do a post request to janrain's servers and provide the created token?
 * If it's verified, sign in the user using devise's `sign_in` method (I think?)
@@ -45,7 +45,7 @@ janrain <-- app endpoint --> create user --> sign in user --> redirect to main
 
 ##Install
 
-This app is uses Ruby version 2.2.
+This app uses Ruby version 2.2.
 
 Download or fork the repository and bundle in terminal in order to use the required gems and dependencies.
 
