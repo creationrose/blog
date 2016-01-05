@@ -20,12 +20,12 @@ Step for Janrain:
 
 
 
-** --------------------------------- **
-**         Architecture              **
-** --------------------------------- **
-* user *
-* app endpoint *
-* janrain *
+ ---------------------------------
+         Architecture
+ -------------------------------
+ user
+ app endpoint
+ janrain
 
 * user signs in to janrain and gets a token (random string)
 * user sends token to app endpoint
@@ -34,10 +34,10 @@ Step for Janrain:
 * janrain responds with additional information about the user (if it's a valid token)
 
 
-**       users   **
-**       |   |   **
-**       v   v   **
-** janrain<--app endpoint-->create user-->sign in user-->redirect to show **
+      users
+      |   |
+      v   v
+janrain <-- app endpoint --> create user --> sign in user --> redirect to main
 
 
 
