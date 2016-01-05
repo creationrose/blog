@@ -6,10 +6,45 @@ This blog is useful for adding topics of interests. You can also add comments to
 
 Jessica Hori
 
+##Updates
+
+Add New Relic performance montoring (database change)
+Add Jainrain social media login
+
+Step for Janrain:
+
+* create new user based based on FB or Google (how to do with devise handling it?) and save janrain info to it
+* verify the token with Janrain and get more info from them
+* Maybe do a post request to janrain's servers and provide the created token?
+* If it's verified, sign in the user using devise's `sign_in` method (I think?)
+
+
+
+** --------------------------------- **
+**         Architecture              **
+** --------------------------------- **
+* user *
+* app endpoint *
+* janrain *
+
+* user signs in to janrain and gets a token (random string)
+* user sends token to app endpoint
+* app endpoint extracts the token from the POST
+* app endpoint sends the token + app key to janrain
+* janrain responds with additional information about the user (if it's a valid token)
+
+
+**       users   **
+**       |   |   **
+**       v   v   **
+** janrain<--app endpoint-->create user-->sign in user-->redirect to show **
+
+
+
 
 ##Install
 
-This app is used in connection with Rails and ActiveRecord.
+This app is uses Ruby version 2.2.
 
 Download or fork the repository and bundle in terminal in order to use the required gems and dependencies.
 
