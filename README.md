@@ -20,26 +20,27 @@ Step for Janrain:
 
 
 
- ---------------------------------
+ -------------------------------
          Architecture
  -------------------------------
+```ruby
  user
  app endpoint
  janrain
-
+```
 * user signs in to janrain and gets a token (random string)
 * user sends token to app endpoint
 * app endpoint extracts the token from the POST
 * app endpoint sends the token + app key to janrain
 * janrain responds with additional information about the user (if it's a valid token)
 
-
+```ruby
       users
       |   |
       v   v
 janrain <-- app endpoint --> create user --> sign in user --> redirect to main
 
-
+```
 
 
 ##Install
