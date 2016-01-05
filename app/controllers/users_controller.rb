@@ -13,12 +13,14 @@ class UsersController < ApplicationController
     parameters:{:apiKey=>"6611c9e927f555a97b3ef35bb6a137a1740d151b",:token=>params[:token]}
 
       provider = response.body['profile']['providerName']
+      name = response.body['profile']["displayName"]  #Not a method
       uid = response.body['accessCredentials']['uid']
       user = User.where('provider=?',provider)
+      .where("provider_id=?", name)
       .where("provider_id=?",uid).first
 
     if (!user)
-      user = User.new({:email=>"#{uid}@#{provider}",:provider=>provider, :provider_id=> uid })
+      user = User.new({:email=> name })  #"#{uid}@#{provider}" #, :provider=>provider, :provider_id=> uid
     user.save!
     end
 
@@ -28,24 +30,3 @@ end
 
 
 
-
-
-
-
-
-# * INFORMATION GATHERING *
-
-# token = params[:token]
-#     response=Unirest.post "https://duchess.rpxnow.com/api/v2/auth_info",
-#     parameters:{:apiKey=>"6611c9e927f555a97b3ef35bb6a137a1740d151b",:token=>params[:token]}
-#       user=User.where("provider_id=?",response.body["accessCredentials"])
-
-
-#       #.where('provider=?',response.body["accessCredentials"]["type"])
-#       #.where("provider_id=?",response.body["accessCredentials"]["uid"]).first
-#     if (!user)
-#       user=User.create({:provider=>response.body["accessCredentials"]["type"], :provider_id=> response.body["accessCredentials"]["uid"]})
-
-#     end
-#     render :text=>user
-#     .to_json

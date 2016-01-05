@@ -17,7 +17,7 @@
 <br />
 
 <% if user_signed_in? %>
-<p>Signed in as <%= current_user %></p>
+<p><b>Signed in as <%= current_user.email %></b></p>
 
 		<%= link_to "Edit My Account", edit_user_registration_path  %> |
 		<%= link_to "Sign out", destroy_user_session_path, method: :delete %>
